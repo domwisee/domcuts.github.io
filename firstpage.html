@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Cuts - Selection</title>
+    <link rel="stylesheet" href="styles-firstpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📸 Picture Cuts</h1>
+        <p class="subtitle">Choose your preferred collage format:</p>
+
+        <div class="options">
+            <div class="option" onclick="selectOption(4)" id="option4">
+                <img src="images/4pics.png" alt="4 Pictures" class="frame">
+                <p>4 Cuts</p>
+            </div>
+            <div class="option" onclick="selectOption(6)" id="option6">
+                <img src="images/6pics.png" alt="6 Pictures" class="frame">
+                <p>6 Cuts</p>
+            </div>
+        </div>
+
+        <p id="selectedMessage"></p>
+        <button class="start-btn" id="startButton" onclick="start()">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

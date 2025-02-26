@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Cuts - Camera</title>
+    <link rel="stylesheet" href="styles-thirdpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Picture Cuts - Camera</h1>
+
+        <!-- Video Capture Section -->
+        <div class="capture-area">
+            <p id="countdown">3</p>
+            <video id="video" autoplay></video>
+            <button id="startCapture">Start Capture</button>
+        </div>
+
+        <!-- Collage Display -->
+        <div id="photo-strip" class="photo-strip"></div>
+
+        <!-- Customization Options -->
+        <div class="customization">
+            <h2>Customize your photo strip</h2>
+
+            <h3>Frame Color</h3>
+            <div class="color-options">
+                <button class="color-btn" data-color="white">White</button>
+                <button class="color-btn" data-color="pink">Pink</button>
+                <button class="color-btn" data-color="green">Green</button>
+                <button class="color-btn" data-color="blue">Blue</button>
+                <button class="color-btn" data-color="yellow">Yellow</button>
+                <button class="color-btn" data-color="purple">Purple</button>
+            </div>
+
+            <h3>Choose a Filter:</h3>
+            <div class="filter-options">
+            <button class="filter-btn" data-filter="none">None</button>
+            <button class="filter-btn" data-filter="grayscale(100%)">Grayscale</button>
+            <button class="filter-btn" data-filter="sepia(100%)">Sepia</button>
+            <button class="filter-btn" data-filter="invert(100%)">Invert</button>
+            <button class="filter-btn" data-filter="brightness(150%)">Brighten</button>
+            </div>
+        </div>
+
+        <!-- Final Actions -->
+        <div class="actions">
+            <button id="downloadPhoto">📥 Download Photo Strip</button>
+            <button id="retakePhotos">📸 Take New Photos</button>
+
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button id="sendEmail">📩 Send to Email</button>
+        </div>
+    </div>
+
+    <script src="script-thirdpage.js"></script>
+</body>
+</html>

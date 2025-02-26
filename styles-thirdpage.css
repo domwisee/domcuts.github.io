@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: "press Start 2P";
+    text-align: center;
+    background: #ffc0cb; /* Soft pink */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Camera Section */
+.capture-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    background: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scaleX(-1); /* Flips the video horizontally */
+}
+
+/* Countdown */
+p#countdown {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: red;
+    animation: countdownEffect 1s ease-in-out infinite;
+}
+
+/* Countdown Animation */
+@keyframes countdownEffect {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    max-width: 220px;
+    padding: 12px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+}
+
+/* Photo Strip */
+.photo-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo Strip Images */
+.photo-strip img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Customization Section */
+.customization {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    font-size: 18px;
+    color: #444;
+}
+
+/* Customization Options */
+.color-options, .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* Color Buttons */
+.color-btn {
+    padding: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    text-align: center;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Individual Color Styles */
+.color-btn[data-color="white"] { background: #f5f5f5; color: black; border: 1px solid #ccc; }
+.color-btn[data-color="pink"] { background: #ffe0f0; color: #ff1493; border: 1px solid #ff1493; }
+.color-btn[data-color="green"] { background: #e0ffe0; color: #008000; border: 1px solid #008000; }
+.color-btn[data-color="blue"] { background: #e0f7ff; color: #0000ff; border: 1px solid #0000ff; }
+.color-btn[data-color="yellow"] { background: #fffacd; color: #ffcc00; border: 1px solid #ffcc00; }
+.color-btn[data-color="purple"] { background: #f0e0ff; color: #800080; border: 1px solid #800080; }
+
+/* Filters */
+.filter-btn {
+    background: #6200ea;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-btn:hover {
+    background: #3700b3;
+    transform: scale(1.1);
+}
+
+/* Actions Section */
+.actions {
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .photo-strip img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

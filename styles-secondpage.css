@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: "press Start 2P";
+    text-align: center;
+    background: #ffc0cb; /* Soft pink */
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Notes Section */
+.note-container {
+    margin-top: 20px;
+}
+
+.note-title {
+    background: #ff6666;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+    background: #ffe4e1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out 0.2s forwards;
+}
+
+.note p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+.note ul {
+    text-align: left;
+    margin: 10px auto;
+    max-width: 300px;
+    list-style-type: "🔹 ";
+    font-size: 16px;
+}
+
+/* Start Button */
+.start-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 15px 35px;
+    background: #7b1fa2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-btn:hover {
+    background: #4a148c;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
